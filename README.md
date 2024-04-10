@@ -1,7 +1,9 @@
 # Informatik-Eksamensprojekt-Bibliotek
 
 Eksamensprojekt 2024 - Informatik B
+
 Burak, Ksawery & Liv
+
 Formål:
 I skal med dette tema som jeres udgangspunkt finde en problemstilling, hvis løsningen forudsætter udviklingen af et it-system. Løsningen skal så udvikles og dokumenteres
 
