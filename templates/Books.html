@@ -1,0 +1,33 @@
+<!-- where you can search and find books -->
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        div {
+            background-color:#99ccff;
+        }
+        mark {
+            background-color: white;
+            color:rgb(0, 13, 255);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="font-family: bookman_old_style; color:blue;text-align:center;"><i>Svinding bibliotek</i></h1>
+    </div>
+
+    <div class="topnav">
+        <input type="text" placeholder="Search.." style="width: 95%;">
+    </div>
+
+    <div>
+        <h2>Books</h2>
+        <ul>
+            {% for book in books %}
+                <li>{{ book[1] }} - {{ book[2] }} - {{ book[3] }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
