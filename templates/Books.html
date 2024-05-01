@@ -45,12 +45,39 @@
                 border: 1px solid #ccc;  
             }
         }
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #99ccff;
+        }
+
+        .button1:hover {
+            background-color: #99ccff;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div>
         <h1 style="font-family: bookman_old_style; color:blue;text-align:center;"><i>Svinding bibliotek</i></h1>
     </div>
+    
+    <a href="code.html"> 
+        <button class="button button1">Go Back</button>
+    </a>
 
     <div class="topnav">
         <input type="text" placeholder="Search.." style="width: 95%;">
