@@ -1,72 +1,78 @@
-<!-- frog on a log page, description --> 
+<!-- frog on a log page, description -->
 
 <html>
+  <style>
+    div {
+      background-color: #99ccff;
+    }
+    mark {
+      background-color: white;
+      color: rgb(0, 13, 255);
+    }
+  </style>
+
+  <head>
+    <title>Frog on a log</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-        div {
-          background-color:#99ccff;
-        }
-        mark {
-            background-color: white;
-            color:rgb(0, 13, 255);
-        }
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .button {
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+
+      .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #99ccff;
+      }
+
+      .button1:hover {
+        background-color: #99ccff;
+        color: white;
+      }
+      .button2 {
+        background-color: white;
+        color: black;
+        border: 2px solid #99ccff;
+      }
+
+      .button2:hover {
+        background-color: #99ccff;
+        color: white;
+      }
     </style>
+  </head>
 
-    <head>
-        <title>Frog on a log</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            }
+  <body>
+    <div>
+      <h1
+        style="font-family: bookman_old_style; color: blue; text-align: center">
+        <i>Svinding bibliotek</i>
+      </h1>
+    </div>
+    <a href="code.html">
+      <button class="button button1">Go Back</button>
+    </a>
 
-        .button {
-            border: none;
-            color: white;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
+    <button class="button button2" style="float: right">Reserver</button>
 
-        .button1 {
-            background-color: white; 
-            color: black; 
-            border: 2px solid #99ccff;
-        }
-
-        .button1:hover {
-            background-color: #99ccff;
-            color: white;
-        }
-        .button2 {
-            background-color: white; 
-            color: black; 
-            border: 2px solid #99ccff;
-        }
-
-        .button2:hover {
-            background-color: #99ccff;
-            color: white;
-        }
-        </style>
-    </head>
-    
-    <body>
-        <div>
-            <h1 style="font-family: bookman_old_style;color:blue;text-align:center;"><i>Svinding bibliotek</i></h1>
-        </div>
-        <a href="code.html"> 
-            <button class="button button1">Go Back</button>
-        </a>
-        
-            <button class="button button2" style="float:right;">Reserver</button>
-        
-            <img src="http://prodimage.images-bn.com/pimages/9780545687911_p0_v1_s1200x630.jpg" alt="Frog_on_log.jpg" style="width:25%;"> 
-    </body>
+    <img
+      src="http://prodimage.images-bn.com/pimages/9780545687911_p0_v1_s1200x630.jpg"
+      alt="Frog_on_log.jpg"
+      style="width: 25%" />
+  </body>
 </html>
