@@ -1,6 +1,6 @@
 import mysql.connector
 
-# Establish connection to MySQL database
+# Function to establish connection to MySQL database
 def connect_to_database():
     return mysql.connector.connect(
         host="localhost",
@@ -11,6 +11,7 @@ def connect_to_database():
 
 # Function to fetch data from the "Books" table
 def fetch_data():
+    connection = None  # Initialize connection variable
     try:
         connection = connect_to_database()
         if connection.is_connected():
@@ -21,6 +22,6 @@ def fetch_data():
     except mysql.connector.Error as e:
         print("Error while fetching data from Books table:", e)
     finally:
-        if connection.is_connected():
+        if connection is not None and connection.is_connected():
             cursor.close()
             connection.close()
