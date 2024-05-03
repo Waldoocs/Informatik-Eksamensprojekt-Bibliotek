@@ -75,7 +75,8 @@
         <h1 style="font-family: bookman_old_style; color:blue;text-align:center;"><i>Svinding bibliotek</i></h1>
     </div>
     
-    <a href="code.html"> 
+    <!-- Go Back button -->
+    <a href="/"> 
         <button class="button button1">Go Back</button>
     </a>
 
@@ -86,9 +87,13 @@
     <div>
         <h2>Books</h2>
         <ul>
-            {% for book in books %}
-                <li>{{ book[1] }} - {{ book[2] }} - {{ book[3] }}</li>
-            {% endfor %}
+            {% if books %}
+                {% for book in books %}
+                    <li>{{ book[1] }} - {{ book[2] }} - {{ book[3] }}</li>
+                {% endfor %}
+            {% else %}
+                <li>No books available</li>
+            {% endif %}
         </ul>
     </div>
 </body>
